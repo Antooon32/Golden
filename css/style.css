@@ -1,19 +1,19 @@
 :root {
-    --yellow: #FED136;
-    --black: #000000;
-    --white: #FFFFFF;
+    --main_color: #FED136;
+    --dark_color: #000000;
+    --light_color: #FFFFFF;
 }
 
 button {
-    background-color: var(--yellow);
-    color: var(--white)
+    background-color: var(--main_color);
+    color: var(--light_color)
 }
 
 footer {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--dark_color);
+    color: var(--light_color);
 }
 
 header {
-    color: var(--yellow);
+    color: var(--main_color);
 }
