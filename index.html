@@ -4,59 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Golden</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="./index.html">Golden</a>
-            <ul>
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="./index.html">PORTFOLIO</a></li>
-                <li><a href="./index.html">ABOUT</a></li>
-                <li><a href="./index.html">CONTACT</a></li>
+    <header class="header">
+        <nav class="nav">
+            <a class="logo" href="./index.html">Golden</a>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="item-link" href="./index.html">HOME</a></li>
+                <li class="nav-item"><a class="item-link" href="#services">SERVICES</a></li>
+                <li class="nav-item"><a class="item-link" href="./index.html">PORTFOLIO</a></li>
+                <li class="nav-item"><a class="item-link" href="./index.html">ABOUT</a></li>
+                <li class="nav-item"><a class="item-link" href="./index.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1 id="services">SERVICES</h1>
-            <ul>
-                <li>
-                    <img src="./images/e-commerce.jpg" alt="E-Commerce">
-                    <h3>E-Commerce</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus natus assumenda culpa.
+    <main class="main">
+        <section class="services">
+            <h1 class="services-title" id="services">SERVICES</h1>
+            <ul class="services-list">
+                <li class="services-item">
+                    <h3 class="item-title">E-Commerce</h3>
+                    <p class="item-description">
+                        Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
                     </p>
                 </li>
-                <li>
-                    <img src="./images/responsive_web.jpg" alt="Responsive Web">
-                    <h3>Responsive Web</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eius blanditiis facere.
+                <li class="services-item">
+                    <h3 class="item-title">Responsive Web</h3>
+                    <p class="item-description">
+                        Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
                     </p>
                 </li>
-                <li>
-                    <img src="./images/web_security.jpg" alt="Web Security">
-                    <h3>Web Security</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quae a incidunt!
+                <li class="services-item">
+                    <h3 class="item-title">Web Security</h3>
+                    <p class="item-description">
+                        Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
                     </p>
                 </li>
             </ul>
         </section>
     </main>
-    <footer>
-        <h2>CONTACT US</h2>
-        <form>
-            <input type="text" placeholder="YOUR NAME">
-            <input type="email" placeholder="YOUR EMAIL">
-            <input type="text" placeholder="SUBJECT">
-            <textarea placeholder="YOUR MESSAGE"></textarea>
-            <button type="submit">SEND MESSAGE</button>
+    <footer class="footer">
+        <h2 class="footer-title">CONTACT US</h2>
+        <form class="form">
+            <input class="form-input" type="text" placeholder="YOUR NAME *">
+            <input class="form-input" type="email" placeholder="YOUR EMAIL *">
+            <input class="form-input" type="text" placeholder="SUBJECT *">
+            <textarea class="form-textarea" placeholder="YOUR MESSAGE *"></textarea>
+            <button class="form-button" type="submit">SEND MESSAGE *</button>
         </form>
     </footer>
 </body>
