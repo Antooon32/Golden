@@ -17,11 +17,33 @@ body {
     font-weight: 400;
 }
 
+.nav, .nav-list,
+.services-list,
+.div-form {
+    display: flex;
+}
+
+.container {
+    width: 942px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header {
+    padding-top: 44px;
+    padding-bottom: 109px;
     color: var(--main_color);
 }
 
+.services {
+    padding-bottom: 119px;
+}
+
 .logo {
+    margin-right: 350px;
+    margin-left: 34px;
     font-family: var(--third-family);
     font-size: 36px;
     line-height: 114%;
@@ -30,13 +52,57 @@ body {
     color: var(--main_color);
 }
 
+.nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+
 .item-link {
     line-height: 293%;
     text-align: center;
     color: var(--main_color);
 }
 
+.services-list {
+    height: 185px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 56px;
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 274px;
+}
+
+.services-item::before {
+    content: '';
+    height: 73px;
+    /* margin-bottom: 69.5px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image: url(../images/circle.png); */
+    /* outline: 1px solid red; */
+}
+
+.services-item:nth-child(1)::before {
+    background-image: url(../images/e-commerce.png), 
+    url(../images/circle.png);
+}
+
+.services-item:nth-child(2)::before {
+    background-image: url(../images/responsive-web.png),
+    url(../images/circle.png);
+}
+
+.services-item:nth-child(3)::before {
+    background-image: url(../images/web-security.png),
+    url(../images/circle.png);
+}
+
 .services-title {
+    padding-bottom: 87.5px;
     font-weight: 700;
     font-size: 40px;
     line-height: 187%;
@@ -63,16 +129,38 @@ body {
 }
 
 .footer {
+    padding-top: 92px;
+    padding-bottom: 115px;
     background-color: var(--dark_color);
     color: var(--light_color);
 }
 
 .footer-title {
+    margin-bottom: 114px;
     font-weight: 700;
     font-size: 40px;
     letter-spacing: -0.03em;
     text-align: center;
     color: var(--light_color);
+}
+
+.div-form {
+    height: 214px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-bottom: 27px;
+}
+
+.form-input {
+    width: 455px;
+    height: 52px;
+}
+
+.form-textarea {
+    width: 458px;
+    height: 212px;
 }
 
 .form-input, .form-textarea {
@@ -83,6 +171,10 @@ body {
 }
 
 .form-button {
+    display: block;
+    width: 242px;
+    height: 68px;
+    margin: 0 auto;
     background-color: var(--main_color);
     color: var(--light_color);
     font-family: var(--font-family);
